@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import {Routes,Route} from "react-router-dom"
 import { Home } from './Pages/Home/Home';
 import { RequiresAuth } from './authentication/RequiresAuth';
 import { Login } from './authentication/Login';
-import { ToastContainer } from 'react-toastify';
 import { ContentBox } from './Components/ContentBox';
 import { Explore } from './Pages/Explore/Explore';
 import { Profile } from './Pages/Profile/Profile';
@@ -17,7 +15,6 @@ import { SignUp } from './authentication/SignUp';
 function App() {
   return (
     <div className="App">
-      {/* <ToastContainer autoClose={1000}/> */}
         <Routes>
             <Route path="/" element={<RequiresAuth><ContentBox><Home /></ContentBox></RequiresAuth> } />
             <Route path="/login" element={<Login />} />
