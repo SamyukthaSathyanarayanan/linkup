@@ -34,8 +34,12 @@ export function PostCard({singlePost}){
      </div>
      <p>{singlePost?.content}</p> 
      <div className="icons-individual-post">
-     {!checkIfLikedByUser(postState?.posts,singlePost?._id,user?.username)  &&  <i onClick={()=>addLike(singlePost?._id,token,dispatchPost)} class="fa-regular fa-heart" />}
-     {checkIfLikedByUser(postState?.posts,singlePost?._id,user?.username)  &&  <i onClick={()=>doDislike(singlePost?._id,token,dispatchPost)} class="fa-solid fa-heart"></i>}
+      <div>
+        {!checkIfLikedByUser(postState?.posts,singlePost?._id,user?.username)  &&  <i onClick={()=>addLike(singlePost?._id,token,dispatchPost)} class="fa-regular fa-heart" />}
+        {checkIfLikedByUser(postState?.posts,singlePost?._id,user?.username)  &&  <i onClick={()=>doDislike(singlePost?._id,token,dispatchPost)} class="fa-solid fa-heart"></i>}
+        <span className="likeCount"> ({singlePost?.likes?.likeCount})</span>
+      </div>
+     
         <i class="fa-regular fa-comment"></i>
         <Link to="/" className="icons-post"><FontAwesomeIcon icon={faShareNodes} /></Link>
         {!checkBookMarked(userState.bookMarks,singlePost?._id) ? <i onClick={()=>addBookMark(singlePost?._id,token,dispatchUser)} class="fa-regular fa-bookmark"></i>
