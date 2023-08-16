@@ -47,26 +47,26 @@ export function Login() {
         ></img>
       </div>
       <div className="right-box-login">
-      <h2 className="heading-login">Login</h2>
+      <h1 className="heading-login">Login</h1>
         <form className="form-login" onSubmit={(event) => handleSubmit(event)}>
           
-          <label htmlFor="email" className="email-label-login">
+          <label htmlFor="email" className="login-label">
             Email Address
           </label>
           <input
             type="email"
             id="email"
             placeholder="sam@gmail.com"
-            className="emailinput-login"
+            className="login-input"
             onChange={(event) => handleUserName(event)}
           />
-          <label htmlFor="password" className="password-label-login">
+          <label htmlFor="password" className="login-label">
             Password
           </label>
           <input
             id="password"
             placeholder="***********"
-            className="passwordinput-login"
+            className="login-input"
             type={passwordType}
             onChange={(event) => handlePass(event)}
           />

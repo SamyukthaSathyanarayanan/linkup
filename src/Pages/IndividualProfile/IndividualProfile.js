@@ -9,8 +9,8 @@ import { doFollow, doUnfollow } from "../../Services/UserServices";
 export function IndividualProfile()
 {
   const {userName} = useParams();
-  const {userState,dispatchUser} = useContext(UserContext);
-  const {postState,dispatchPost} = useContext(PostContext);
+  const {userState} = useContext(UserContext);
+  const {postState} = useContext(PostContext);
   const token = localStorage.getItem("token");
   const {user,setUser} = useContext(AuthContext);
   const reqdUser = userState?.allUsers?.find(({username})=>username===userName);

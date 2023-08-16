@@ -88,36 +88,36 @@ export function SignUp()
             alt="loading"
           ></img>
         </div>
-        <div className="right-box-login">
-            <h2 className="heading-login">Sign up </h2>
+        <div className="right-box-login rightbox">
+            <h1 className="heading-login">Sign up </h1>
         
         <form className="form-login" onSubmit={(event)=>signupHandler(event)}>
                 
-                    <label  className="label-form">First Name</label>
-                    <input required className="input-form" type="text" onChange={(event)=>reduceFun({type:"setFirstName",payload:event.target.value})} />
+                    <label  className="login-label">First Name</label>
+                    <input  placeholder="Sam" equired className="login-input" type="text" onChange={(event)=>reduceFun({type:"setFirstName",payload:event.target.value})} />
                 
                 
-                    <label  className="label-form">Last Name</label>
-                    <input required className="input-form" type="text" onChange={(event)=>reduceFun({type:"setLastName",payload:event.target.value})}/>
+                    <label  className="login-label">Last Name</label>
+                    <input  placeholder="Sathya" required className="login-input" type="text" onChange={(event)=>reduceFun({type:"setLastName",payload:event.target.value})}/>
                
                 
-                    <label className="label-form">UserName</label>
-                    <input className="input-form" required type="text" onChange={(event)=>reduceFun({type:"setUserName",payload:event.target.value})}/>
+                    <label className="login-label">User Name</label>
+                    <input  placeholder="Smash" className="login-input" required type="text" onChange={(event)=>reduceFun({type:"setUserName",payload:event.target.value})}/>
                 
                 
-                    <label  className="label-form">Email</label>
-                    <input className="input-form" required type="email" onChange={(event)=>reduceFun({type:"setEmail",payload:event.target.value})}/>
+                    <label  className="login-label">Email</label>
+                    <input placeholder="samsathya@gmail.com" className="login-input" required type="email" onChange={(event)=>reduceFun({type:"setEmail",payload:event.target.value})}/>
                
                 
-                    <label className="label-form">Password</label>
+                    <label className="login-label">Password</label>
                     
-                        <input className="input-form" required type={passwordType} onChange={(event)=>reduceFun({type:"setPassword",payload:event.target.value})} />
+                        <input placeholder="**********" className="login-input" required type={passwordType} onChange={(event)=>reduceFun({type:"setPassword",payload:event.target.value})} />
                         {passwordType==="password" ? <i onClick={()=>handlePassword()} className="bi bi-eye" id="eye"></i>
                             :<i onClick={()=>handlePassword()} className="bi bi-eye-slash" id="eye"></i>}
                 
-                    <label className="label-form">Confirm Password</label>
+                    <label className="login-label">Confirm Password</label>
                     
-                        <input className="input-form" required type={passwordType} onChange={(event)=>
+                        <input  placeholder="**********" className="login-input" required type={passwordType} onChange={(event)=>
                             reduceFun({type:"setConfirmPassword",payload:event.target.value})} />
                         {passwordType==="password" ? <i onClick={()=>handlePassword()} class="bi bi-eye" id="eye"></i>
                                 :<i onClick={()=>handlePassword()} class="bi bi-eye-slash" id="eye"></i>}
