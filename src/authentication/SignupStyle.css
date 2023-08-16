@@ -1,0 +1,15 @@
+.label-form{
+  color: white;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.input-form{
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+}
+
+.signupimg  {
+  height: 130vh;
+
+}

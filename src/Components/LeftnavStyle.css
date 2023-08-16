@@ -1,0 +1,60 @@
+:root{
+  --greybackground: rgb(243, 243, 243);
+  --peacockcolor: rgb(15, 91, 110);
+}
+body{
+  background-color: var(--greybackground);
+}
+
+.container-home{
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1fr;
+  padding: 3rem;
+  grid-column-gap: 5rem;
+}
+
+.left-home{
+  display: grid;
+  grid-gap: 1rem;
+}
+
+
+.leftlinks-home{
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: large;
+  padding: 0.5rem;
+}
+
+.logout-btn-home{
+  background-color: var(--peacockcolor);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  width: 8rem;
+  cursor: pointer;
+}
+
+.leftlinks-home:hover{
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.linkuptxt{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--peacockcolor );
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.icons{
+  margin-right: 0.5rem;
+  color: var(--peacockcolor);
+}
+
+.imgavatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

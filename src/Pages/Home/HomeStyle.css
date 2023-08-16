@@ -1,0 +1,61 @@
+:root{
+  --greybackground: rgb(243, 243, 243);
+  --peacockcolor: rgb(15, 91, 110);
+}
+.center-home{
+  display: grid;
+}
+
+.textareabody{
+  background-color: white; 
+}
+.imgtextarea{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+}
+
+.imgpost{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem
+  } 
+
+
+.txtarea{
+  width: 33rem;
+  height: 7rem;
+  background-color: var(--greybackground) ;
+  border: none;
+  padding: 0.5rem;
+
+}
+.imgavatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-btn {
+  background-color: var(--peacockcolor);
+  padding: 0.2rem 0.5rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sort-btn{
+  background-color: var(--peacockcolor);
+  padding: 0.5rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sortButtons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+}

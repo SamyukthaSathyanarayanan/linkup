@@ -1,0 +1,40 @@
+:root {
+  --peacockcolor: rgb(15, 91, 110);
+}
+
+.whotofollow{
+  margin-block-start: 0;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.user-image-right {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  align-items: flex-start;
+}
+
+.name-container span {
+  white-space: nowrap; 
+}
+
+.btn-follow{
+  background-color: var(--peacockcolor);
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  margin-left: auto;
+  cursor: pointer;
+}

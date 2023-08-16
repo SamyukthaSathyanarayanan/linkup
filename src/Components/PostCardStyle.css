@@ -1,0 +1,13 @@
+.post-card {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+
+}
+
+.post-card-img{
+  border-radius: 50%;
+  height: 3rem;
+}
+

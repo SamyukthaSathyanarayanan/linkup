@@ -1,0 +1,51 @@
+.individual-posts{
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.user-post-img{
+  border-radius: 50%;
+  height: 3rem;
+}
+
+.post-top{
+  display: flex;
+}
+
+.post-names{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.createdDate{
+  margin-left: 1.5rem;
+}
+.username-edit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-fullname {
+  margin: 0; 
+  font-weight: bold;
+}
+
+.username {
+  margin: 0; 
+  color: gray;
+}
+.icons-post:hover{
+  color: grey;
+}
+
+.icons-individual-post{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+
+
